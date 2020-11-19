@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASILEIRO ou ESTRANGEIRO?</title>
+    <style>
+        body {
+            background:lightblue;
+            color:navy;
+            font:normal 15pt Arial;
+        }
+        input{
+            color:navy;
+            font:normal 12pt Arial;
+            margin-top: 20px;
+        
+            }
+            div#res{
+                margin-top: 20px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Qual seu país?</h1>
+    Seu país é: <input type="text" name="txtpas" id="txtpas">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+        <script>
+            function verificar() {
+                var txtp = window.document.querySelector('input#txtpas')
+                var res = window.document.querySelector('div#res')
+                var pas = (txtp.value)
+                res.innerHTML = (`<p>Você mora em ${pas}.</p>`)
+                if (pas === 'Brasil'||pas === 'brasil') {
+                    res.innerHTML += (`<p>Então você é <strong>brasileiro</strong>.</p>`)
+                } else {
+                    res.innerHTML += (`<p>Então você é <strong>estrangeiro</strong>.</p>`)
+                }
+
+            }
+        </script>
+
+</body>
+</html>
