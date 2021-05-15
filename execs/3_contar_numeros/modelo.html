@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de números | Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                <label for="start">Início: </label>
+                <input type="number" name="start" id="start">
+            </p>
+            <p>
+                <label for="end">Fim: </label>
+                <input type="number" name="end" id="end">
+            </p>
+            <p>
+                <label for="move">Passo: </label>
+                <input type="number" name="move" id="move">
+            </p>
+            <p><input type="button" value="Contar" onclick="count()"></p>
+        </div>
+        <div id="res">
+            Esperando dados...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVídeo</p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

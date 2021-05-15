@@ -1,8 +1,8 @@
-var agora = new Date() 
-var hora = agora.getHours()
-var min = agora.getMinutes()
-var seg = agora.getUTCSeconds()
-console.log (`Agora são exatamente ${hora}:${min}:${seg}.`)
+var agora = new Date();
+var hora = agora.getHours();
+var min = agora.getMinutes();
+var seg = agora.getSeconds();
+console.log (`Agora são exatamente ${hora}:${min}:${seg}.`);
 if (hora < 6 ) {
     console.log('Boa Madrugada!')
 } else if (hora < 12) {
@@ -11,6 +11,6 @@ if (hora < 6 ) {
     console.log('Boa Tarde!')
 } else {
     console.log('Boa Noite!')
-}
+};
 
 //condição aninhada

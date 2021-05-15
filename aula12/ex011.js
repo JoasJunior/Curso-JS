@@ -1,8 +1,9 @@
-var idade = 18
+var idade = 10
+console.log(`Você tem ${idade} anos.`)
 if (idade < 16) {
-    console.log('Não vota')
+    console.log('Você não vota.')
 } else if (idade < 18 || idade > 65) {
-    console.log('Voto Opcional')
+    console.log('Seu voto é opcional.')
 } else {
-    console.log('Voto Obrigatório')
+    console.log('Seu voto é obrigatório.')
 }

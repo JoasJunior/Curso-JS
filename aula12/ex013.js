@@ -1,5 +1,5 @@
-/*var agora = new Date()
-var diaSem = agora.getDay()*/
+var agora = new Date();
+var diaSem = agora.getDay();
 /*
   0 = domingo
   1 = segunda
